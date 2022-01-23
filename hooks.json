@@ -1,0 +1,27 @@
+[
+    {
+        "id":"simple-one",
+        "execute-command":"/root/tandysun/webhook/webhook-linux-amd64/echoparam",
+        "include-command-output-in-response":true,
+        "include-command-output-in-response-on-error":true,
+        "response-message":"Executing simple webhook...",
+        "pass-arguments-to-command":[
+            {
+                "source":"payload",
+                "name":"ref"
+            },
+            {
+                "source":"entire-payload",
+                "name":"all-json"
+            },
+            {
+                "source":"entire-headers",
+                "name":"all-header"
+            },
+            {
+                "source":"entire-query",
+                "name":"all-query"
+            }
+        ]
+    }
+]
