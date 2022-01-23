@@ -36,7 +36,7 @@ total 12304
 
 ### 在 github 上尝试使用 webhook
 在github上找一个repository，并进行配置
-![image](https://user-images.githubusercontent.com/4156504/150673524-949b0db8-6e58-4774-af5f-9463b031f303.png)
+![image](https://user-images.githubusercontent.com/4156504/150673914-f8977155-67ae-4552-b75d-1da4481dd043.png)
 
 
 ### 测试
@@ -44,7 +44,7 @@ total 12304
 ![image](https://user-images.githubusercontent.com/4156504/150673657-0ab6155c-e99b-46cd-9521-4435667d23fc.png)
 
 还可以查看具体的回调详情
-![image](https://user-images.githubusercontent.com/4156504/150673684-e5f76cdc-c81d-44ae-8019-a21419ec88de.png)
+![image](https://user-images.githubusercontent.com/4156504/150673962-c9bb05d1-dd8f-4050-a0a9-2201ebcd8a09.png)
 
 在webhook日志也可以看到有请求被处理
 ```
@@ -56,7 +56,7 @@ total 12304
 [webhook] 2022/01/23 17:46:45 found 1 hook(s) in file
 [webhook] 2022/01/23 17:46:45   loaded: simple-one
 [webhook] 2022/01/23 17:46:45 serving hooks on http://0.0.0.0:9000/hooks/{id}
-[webhook] 2022/01/23 17:46:53 [c02755] incoming HTTP POST request from 140.82.115.144:23757
+[webhook] 2022/01/23 17:46:53 [c02755] incoming HTTP POST request from 140.82.XX.XX:23757
 [webhook] 2022/01/23 17:46:53 [c02755] simple-one got matched
 [webhook] 2022/01/23 17:46:53 [c02755] simple-one hook triggered successfully
 [webhook] 2022/01/23 17:46:53 [c02755] executing /root/tandysun/webhook/webhook-linux-amd64/echoparam (/root/tandysun/webhook/webhook-linux-amd64/echoparam) with arguments ["/root/tandysun/webhook/webhook-linux-amd64/echoparam" "refs/heads/master" "{\"after\":\"34008ad043f4aabd1333b6d65f730099145fbda1\",\"url\":\"https://api.github.com/users/jaydensun\"}}" "{\"Accept\":\"*/*\",\"X-Hub-Signature-256\":\"sha256=36bb1a0299df3f0d9f91abc98c83caa9866ced5ba44f8d3a0f10da3fe2fe2784\"}" "{}"] and environment [] using  as cwd
